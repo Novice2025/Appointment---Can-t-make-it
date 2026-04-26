@@ -1,0 +1,2424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazilian Business Communication by Daby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #141414;
+            font-family: 'Inter', sans-serif;
+            color: #e5e5e5;
+        }
+
+        .text-netflix-red {
+            color: #e50914;
+        }
+
+        .bg-netflix-dark {
+            background-color: #141414;
+        }
+
+        .bg-card {
+            background-color: #222222;
+        }
+
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #222222;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #555555;
+            border-radius: 4px;
+        }
+
+        .expression-block {
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .expression-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #e50914;
+            margin-bottom: 0.5rem;
+        }
+
+        .expression-text {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #fde047;
+            margin-top: 1rem;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+            padding: 0.75rem;
+            background-color: #333;
+            border-radius: 0.5rem;
+        }
+
+        .checklist-item input[type="checkbox"] {
+            width: 1.25rem;
+            height: 1.25rem;
+            cursor: pointer;
+        }
+
+        .teacher-note {
+            background-color: #1e3a8a;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.25rem;
+        }
+
+        .greeting-box {
+            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+            padding: 2.5rem;
+            border-radius: 0.75rem;
+            margin: 2rem 0;
+            border: 3px solid #3b82f6;
+            text-align: center;
+        }
+
+        .greeting-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #fbbf24;
+            margin-bottom: 1rem;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .greeting-subtitle {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #60a5fa;
+            margin-bottom: 1.5rem;
+        }
+
+        .greeting-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: #e5e5e5;
+        }
+
+        .lego-highlight {
+            color: #fbbf24;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .start-button {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-top: 1rem;
+        }
+
+        .start-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4);
+        }
+
+        .comparison-box {
+            background-color: #2d3748;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid #4a5568;
+        }
+
+        .portuguese-side {
+            background-color: #2d3748;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .english-side {
+            background-color: #2d3748;
+            border-left: 4px solid #10b981;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .level-box {
+            background-color: #1e293b;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #f59e0b;
+        }
+
+        .level-number {
+            display: inline-block;
+            background-color: #f59e0b;
+            color: black;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            text-align: center;
+            font-weight: bold;
+            margin-right: 1rem;
+            line-height: 32px;
+        }
+
+        .walkthrough-step {
+            background-color: #374151;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #f59e0b;
+        }
+
+        .step-number {
+            display: inline-block;
+            background-color: #f59e0b;
+            color: black;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .visual-guide {
+            background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+            border: 2px solid #14b8a6;
+        }
+
+        .deep-dive-box {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+            border: 2px solid #60a5fa;
+        }
+
+        .transformation-box {
+            background-color: #1e293b;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+            border: 2px solid #8b5cf6;
+        }
+
+        .transformation-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: #374151;
+            border-radius: 0.5rem;
+        }
+
+        .transformation-number {
+            background-color: #8b5cf6;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .transformation-content {
+            flex: 1;
+        }
+
+        .situation-list {
+            background-color: #374151;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #f59e0b;
+        }
+
+        .situation-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: #1e293b;
+            border-radius: 0.5rem;
+        }
+
+        .situation-number {
+            background-color: #f59e0b;
+            color: black;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .situation-content {
+            flex: 1;
+        }
+
+        .visual-sentence {
+            background-color: #1e293b;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin: 0.5rem 0;
+            border-left: 3px solid #f59e0b;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="bg-netflix-dark">
+    <div class="relative w-full h-full min-h-screen">
+        <!-- Header Section -->
+        <header class="p-6 md:p-8 flex items-center justify-between">
+            <h1 class="font-bebas text-4xl md:text-5xl text-netflix-red leading-none">Brazilian Business Communication by Daby</h1>
+            <nav>
+                <!-- Empty for Netflix-style look -->
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="p-6 md:p-8 max-w-4xl mx-auto">
+            <!-- GREETING MESSAGE -->
+            <div class="greeting-box">
+                <h2 class="greeting-title">*** My advice is to read slowly and carefully.  Add the new expressions and situations as you go in your copybook.</h2>
+                <br><br>
+                <h2 class="greeting-title">Learn to communicate like a native.</h2>
+                <p class="greeting-subtitle">Welcome to the Brazilian business communication platform!</p>
+
+                <div class="greeting-text">
+                    <p>This course uses the <span class="lego-highlight">"Lego-block"</span> approach, where each phrase and expression is a building block that fits into another, creating a professional and seamless communication structure. My goal is to equip you with the linguistic tools and cultural insights needed to excel in a Brazilian business environment.</p>
+
+                    <p class="mt-4">Navigate through the lessons, practice with interactive exercises, and apply your knowledge in realistic walkthrough scenes. Let's get started on your journey to fluency!</p>
+                </div>
+
+                <button class="start-button">Start Learning Now!</button>
+            </div>
+
+            <h2 class="text-3xl md:text-4xl font-semibold mb-6">Master Course: Appointment Communication by Daby</h2>
+            <p class="mb-12 text-lg">
+                This is not just a reference guide. This is a <strong>complete learning system</strong> designed specifically for Brazilian professionals. We'll build your English communication skills block by block, just like LEGO.
+            </p>
+
+            <!-- DIAGNOSTIC CHECKLIST -->
+            <section class="expression-block bg-card mb-12">
+                <h3 class="expression-title">📋 Self-Assessment: What do you already know?</h3>
+                <p class="text-lg mb-6">
+                    Before we begin, let's see which Portuguese expressions you already know how to translate into professional English. Check the boxes for what you feel confident about:
+                </p>
+
+                <div class="space-y-2">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check1">
+                        <label for="check1" class="text-lg">Do you know how to say <strong>"Sinto muito - desculpe - infelizmente"</strong> when refusing something?</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check2">
+                        <label for="check2" class="text-lg">Do you know how to say <strong>"Lamento"</strong> (expressing regret)?</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check3">
+                        <label for="check3" class="text-lg">Do you know how to say <strong>"Infelizmente"</strong>?</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check4">
+                        <label for="check4" class="text-lg">Do you know how to say <strong>"Não vou conseguir"</strong> professionally?</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check5">
+                        <label for="check5" class="text-lg">Do you know how to say <strong>"Tenho um compromisso pré-existente"</strong>?</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check6">
+                        <label for="check6" class="text-lg">Do you know how to say <strong>"Algo de última hora surgiu"</strong>?</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check7">
+                        <label for="check7" class="text-lg">Do you know how to say <strong>"Podemos deixar para outro dia?"</strong></label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check8">
+                        <label for="check8" class="text-lg">Do you know how to say <strong>"Que tal...?"</strong> for suggesting alternatives?</label>
+                    </div>
+                </div>
+
+                <!-- TEACHER'S NOTE -->
+                <div class="teacher-note mt-6">
+                    <p class="font-bold mb-2">Teacher's Note:</p>
+                    <p>Don't worry if you checked few boxes! That's exactly why you're here. By the end of this course, you'll be able to check ALL of them confidently. The Brazilian way of thinking is different from the English way of speaking. We're going to bridge that gap.</p>
+                </div>
+            </section>
+
+            <!-- NEW SECTION: DEEP DIVE: "I am afraid / I'm afraid" -->
+            <section class="expression-block bg-card mb-12">
+                <h3 class="expression-title">🎯 Deep Dive: "I am afraid" - The Professional Regret or sorry Expression</h3>
+
+                <div class="deep-dive-box">
+                    <h4 class="text-2xl font-bold text-center text-blue-300 mb-6">Why "I am afraid" is NOT about fear</h4>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-900 p-4 rounded-lg">
+                            <p class="font-bold text-yellow-400 mb-3">What Brazilians think:</p>
+                            <p>"Afraid" = "com medo" or "assustado"</p>
+                            <div class="visual-sentence mt-2">
+                                ❌ This is a literal translation trap! - this is a basic English to talk about your feelings of fear, not for professional communication.
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-900 p-4 rounded-lg">
+                            <p class="font-bold text-green-400 mb-3">What it really means?:</p>
+                            <p>"I am afraid" = "Infelizmente" or "Lamento" or "Desculpe" or "sinto muito"</p>
+                            <div class="visual-sentence mt-2">
+                                ✅ This is professional SORRY expression!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="teacher-note mt-6">
+                        <p class="font-bold mb-2">Cultural Insight:</p>
+                        <p>In English, "I'm afraid" is used constantly in professional settings. Americans use it slightly less but still consider it highly professional. It's the perfect bridge between Portuguese "Lamento/Sinto Muito" and English business communication.</p>
+                    </div>
+                </div>
+
+                <div class="situation-list">
+                    <h4 class="text-xl font-bold text-blue-400 mb-4">When to Use "I am afraid" - 5 Specific Situations</h4>
+
+                    <div class="situation-item">
+                        <div class="situation-number">1</div>
+                        <div class="situation-content">
+                            <p class="font-bold">Delivering unavoidable bad news:</p>
+                            <p>"I'm afraid the meeting has been CANCELLED."</p>
+                            <p>"I'm afraid the meeting has been CALLED OFF (synonym for cancelled)."</p>
+                            <div class="visual-sentence mt-2">
+                                🎯 Visualize: So important `You're informing, not apologising'.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="situation-item">
+                        <div class="situation-number">2</div>
+                        <div class="situation-content">
+                            <p class="font-bold">When circumstances are beyond your control:</p>
+                            <p>"I'm afraid the system is down."</p>
+                            <div class="visual-sentence mt-2">
+                                🎯 Visualize: The problem is external, not your fault. You can ADD " I AM SORRY" - after "I'm afraid the system is down."
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="situation-item">
+                        <div class="situation-number">3</div>
+                        <div class="situation-content">
+                            <p class="font-bold">When you need to decline politely:</p>
+                            <p>"I'm afraid I can't make it."</p>
+                            <div class="visual-sentence mt-2">
+                                🎯 Visualize: Softening the refusal with regret.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="situation-item">
+                        <div class="situation-number">4</div>
+                        <div class="situation-content">
+                            <p class="font-bold">When correcting a misunderstanding (politely while someone is speaking):</p>
+                            <p>"I'm afraid that's not quite right = you are very polite to the person."</p>
+                            <div class="visual-sentence mt-2">
+                                🎯 Visualize: Gentle correction without confrontation.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="situation-item">
+                        <div class="situation-number">5</div>
+                        <div class="situation-content">
+                            <p class="font-bold">When announcing unavoidable changes:</p>
+                            <p>"I'm afraid we need to postpone = professionalism and politeness."</p>
+                            <div class="visual-sentence mt-2">
+                                🎯 Visualize: Announcing change with empathy.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transformation-box">
+                    <h4 class="text-xl font-bold text-purple-400 mb-4">Brazilian Thought → "I am afraid" Transformation</h4>
+
+                    <div class="transformation-step">
+                        <div class="transformation-number">1</div>
+                        <div class="transformation-content">
+                            <p class="font-bold">Portuguese Thought:</p>
+                            <p class="portuguese-thought">"Infelizmente não poderei comparecer à reunião porque meu voo atrasou."</p>
+                        <br>
+                            <p class="text-sm">Literal translation: "Unfortunately I won't be able to attend the meeting because my flight is delayed."</p>
+                            <p class="text-sm">Problem: Sounds cold and like you're blaming the situation without expressing any regret.</p>
+                        </div>
+                    </div>
+
+                    <div class="transformation-step">
+                        <div class="transformation-number">2</div>
+                        <div class="transformation-content">
+                            <p class="font-bold">Identify the regret:</p>
+                            <p>"Infelizmente" → This is regret, not apology</p>
+                            <p class="text-sm">The flight delay is not your fault</p>
+                            <br>
+                            <p class="text-sm">We REGRET to inform our passengers that the flight 1234M is delayed (= this is not your fault neither theirs but these things can happen)</p>
+                        </div>
+                    </div>
+
+                    <div class="transformation-step">
+                        <div class="transformation-number">3</div>
+                        <div class="transformation-content">
+                            <p class="font-bold">Choose "I am afraid":</p>
+                            <p>Use "I'm afraid" because it's external circumstance</p>
+                            <p class="text-sm">Not "I'm sorry" because you didn't cause the delay</p>
+                        </div>
+                    </div>
+
+                    <div class="transformation-step">
+                        <div class="transformation-number">4</div>
+                        <div class="transformation-content">
+                            <p class="font-bold">Construct the sentence:</p>
+                            <p>"I'm afraid I can't attend the meeting due to a flight delay."</p>
+                            <p class="english-answer">✅ Perfect professional English!</p>
+                            <p class="english-answer">✅ <strong>due to</strong> DEVIDO A</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-note mt-6">
+                    <p class="font-bold mb-2">Memory Trick:</p>
+                    <p>Think of "I am afraid" as <strong>"I regret to inform you that..."</strong> but shorter and more natural. It's the professional way to say "unfortunately" without sounding cold.</p>
+                </div>
+            </section>
+
+            <!-- SECTION: WHY "PRE-SCHEDULED" IS BETTER THAN "I'M BUSY" -->
+            <section class="expression-block bg-card mb-12">
+                <h3 class="expression-title">📆 Why "Pre-scheduled Appointment" is Better Than "I'm Busy"</h3>
+
+                <div class="comparison-box">
+                    <h4 class="text-xl font-bold text-yellow-400 mb-4">Why This is Better Than "I'm Busy"</h4>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="portuguese-side">
+                            <p class="font-bold text-yellow-400">What Brazilians Often Say As They are busy:</p>
+                            <ul class="list-disc pl-6 space-y-2 mt-2">
+                                <li>"Estou ocupado"</li>
+                                <li>"Estou muito ocupado"</li>
+                                <li>"Não posso"</li>
+                                <li>"Não vai dar"</li>
+                                <li>"Não vou conseguir"</li>
+                                <li>"Não consigo"</li>
+                            </ul>
+                            <p class="text-sm mt-2">Problem: Sounds vague, dismissive, or like you're hiding something</p>
+                        </div>
+
+                        <div class="english-side">
+                            <p class="font-bold text-green-400">Common Professional English alternatives:</p>
+                            <ul class="list-disc pl-6 space-y-2 mt-2">
+                                <li>"I have a pre-scheduled appointment" - "Common"</li>   
+                                <li>"I have a prior commitment - "Common""</li> 
+                                <li>"I'm already booked at that time - "Very common""</li>  
+                                <li>"I have a pre-scheduled meeting" - "Common for work" </li> 
+                                <li>"I have a prior engagement" - "Common"</li> 
+                                <li>"I have a pre-scheduled client call" - "Common"</li>
+                                <li>"I am committed to another appointment" - "Common"</li> 
+                                <li>"I am already taken" - "Common"</li> 
+                                <li>"I have a conflict in my schedule" - "Common"</li> 
+                            </ul>
+                            <p class="text-sm mt-2">Advantage: Specific, respectful, shows you manage your calendar professionally</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visual-guide">
+                    <h4 class="text-xl font-bold text-center text-teal-300 mb-4">🎯 Cultural Insight</h4>
+                    <p class="text-center">In Brazilian culture, saying "estou ocupado" is common and acceptable -- This is not natural in English if you wish to be polite and communicate with others. In American/International business culture, "I'm busy" can sound dismissive. Always use "pre-scheduled appointment" or "prior commitment" instead.</p>
+                    <p class="text-center">"I AM BUSY" is NOT a BEAUTIFUL way to express being unavailable.</p>
+                    <br>
+                    <br>
+                    <p class="text-center">Think of "pre-scheduled appointment" as a professional way to say "I have something already planned that I can't change."</p>
+                </div>
+
+                <h4 class="text-xl font-bold text-blue-400 mt-6 mb-4">The 3 Levels of "Pre-scheduled" Reasons</h4>
+
+                <div class="level-box">
+                    <div class="level-number">1</div>
+                    <div>
+                        <p class="font-bold text-yellow-400">Level 1: General</p>
+                        <p>"I have a prior commitment"</p>
+                        <p class="text-sm mt-2">Use when: You don't want to specify what type of appointment</p>
+                        <p class="text-xs mt-1">Portuguese equivalent: "Tenho um compromisso pré-existente"</p>
+                    </div>
+                </div>
+
+                <div class="level-box">
+                    <div class="level-number">2</div>
+                    <div>
+                        <p class="font-bold text-orange-400">Level 2: Specific type</p>
+                        <p>"I have a pre-scheduled meeting"</p>
+                        <p class="text-sm mt-2">Use when: You want to mention it's work-related</p>
+                        <p class="text-xs mt-1">Portuguese equivalent: "Tenho uma reunião já marcada"</p>
+                    </div>
+                </div>
+
+                <div class="level-box">
+                    <div class="level-number">3</div>
+                    <div>
+                        <p class="font-bold text-green-400">Level 3: Very specific</p>
+                        <p>"I have a pre-scheduled doctor's appointment"</p>
+                        <p class="text-sm mt-2">Use when: You're comfortable sharing personal details (details = information = informações)</p>
+                        <p class="text-xs mt-1">Portuguese equivalent: "Tenho uma consulta médica marcada"</p>
+                    </div>
+                </div>
+
+                <h4 class="text-xl font-bold text-yellow-400 mt-6 mb-4">Walk-Through Example</h4>
+
+                <div class="walkthrough-step">
+                    <p><span class="step-number">1</span> <strong>Situation:</strong> Your colleague asks: "Can we meet at 2 PM tomorrow?"</p>
+                </div>
+
+                <div class="walkthrough-step">
+                    <p><span class="step-number">2</span> <strong>Brazilian Thought:</strong> "Ah, não vai dar, já tenho algo marcado."</p>
+                </div>
+
+                <div class="walkthrough-step">
+                    <p><span class="step-number">3</span> <strong>Problem with direct translation:</strong> "It won't work, I already have something scheduled." (Sounds vague)</p>
+                </div>
+
+                <div class="walkthrough-step">
+                    <p><span class="step-number">4</span> <strong>Professional English approach:</strong> Use "pre-scheduled" + be specific enough</p>
+                </div>
+
+                <div class="walkthrough-step">
+                    <p><span class="step-number">5</span> <strong>Final professional response:</strong> "I'm afraid I can't make it at 2 PM. I have a pre-scheduled client call at that time."</p>
+                </div>
+
+                <div class="teacher-note mt-6">
+                    <p class="font-bold mb-2">Key Learning:</p>
+                    <p>Always specify what type of appointment you have. "I'm busy" sounds dismissive. "I have a pre-scheduled meeting" shows professionalism and respect for your calendar management.</p>
+                </div>
+            </section>
+
+
+
+    <!-- NEW SECTION: WHY "PRE-SCHEDULED" IS BETTER THAN "I'M BUSY" -->
+<section class="expression-block bg-card mb-12">
+    <h3 class="expression-title">📆 Why "Pre-scheduled Appointment" is Better Than "I'm Busy"</h3>
+
+    <div class="comparison-box">
+        <h4 class="text-xl font-bold text-yellow-400 mb-4">Why This is Better Than "I'm Busy"</h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="portuguese-side">
+                <p class="font-bold text-yellow-400">What Brazilians Often Say:</p>
+                <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>"Estou ocupado"</li>
+                    <li>"Não posso"</li>
+                    <li>"Não vai dar"</li>
+                </ul>
+                <p class="text-sm mt-2">Problem: Sounds vague, dismissive, or like you're hiding something</p>
+            </div>
+
+            <div class="english-side">
+                <p class="font-bold text-green-400">Professional English Alternative:</p>
+                <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>"I have a pre-scheduled appointment"</li>
+                    <li>"I have a prior commitment (= prior meeting)"</li>
+                    <li>"I am double-booked (= prior meeting)"</li>
+                    <li>"I have got a schedule conflict (= prior meeting)"</li>
+                    <li>"I'm already booked at that time"</li>
+                </ul>
+                <p class="text-sm mt-2">Advantage: Specific, respectful, shows you manage your calendar professionally</p>
+                <br><br> 
+                <p class="text-sm mt-2">An adice swap 'I have' for 'I have got' - both mean 'Eu tenho'</p>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="visual-guide">
+        <h4 class="text-xl font-bold text-center text-teal-300 mb-4">🎯 Cultural Insight</h4>
+        <p class="text-center">In Brazilian culture, saying "estou ocupado" is common and acceptable. In American/International business culture, "I'm busy" can sound dismissive. Always use "pre-scheduled appointment" or "prior commitment" instead.</p>
+    </div>
+
+    <h4 class="text-xl font-bold text-blue-400 mt-6 mb-4">The 3 Levels of "Pre-scheduled" Reasons</h4>
+
+    <div class="level-box">
+        <div class="level-number">1</div>
+        <div>
+            <p class="font-bold text-yellow-400">Level 1: General</p>
+            <p>"I have a prior commitment"</p>
+            <p class="text-sm mt-2">Use when: You don't want to specify what type of appointment</p>
+            <p class="text-xs mt-1">Portuguese equivalent: "Tenho um compromisso pré-existente"</p>
+        </div>
+    </div>
+
+    <div class="level-box">
+        <div class="level-number">2</div>
+        <div>
+            <p class="font-bold text-orange-400">Level 2: Specific Type</p>
+            <p>"I have a pre-scheduled meeting"</p>
+            <p class="text-sm mt-2">Use when: You want to mention it's work-related</p>
+            <p class="text-xs mt-1">Portuguese equivalent: "Tenho uma reunião já marcada"</p>
+        </div>
+    </div>
+
+    <div class="level-box">
+        <div class="level-number">3</div>
+        <div>
+            <p class="font-bold text-green-400">Level 3: Very Specific</p>
+            <p>"I have a pre-scheduled doctor's appointment or I need to see the doctor (now you have learnt how to say 'consulta médica' in English)"</p>
+            <p class="text-sm mt-2">Use when: You're comfortable sharing personal details</p>
+            <p class="text-xs mt-1">Portuguese equivalent: "Tenho uma consulta médica marcada"</p>
+        </div>
+    </div>
+
+    <h4 class="text-xl font-bold text-yellow-400 mt-6 mb-4">Walk-Through Example</h4>
+
+    <div class="walkthrough-step">
+        <p><span class="step-number">1</span> <strong>Situation:</strong> Your colleague asks: "Can we meet at 2 PM tomorrow?"</p>
+    </div>
+
+    <div class="walkthrough-step">
+        <p><span class="step-number">2</span> <strong>Brazilian Thought:</strong> "Ah, não vai dar, já tenho algo marcado."</p>
+    </div>
+
+    <div class="walkthrough-step">
+        <p><span class="step-number">3</span> <strong>Problem with direct translation:</strong> "It won't work, I already have something scheduled." (Sounds vague)</p>
+    </div>
+
+    <div class="walkthrough-step">
+        <p><span class="step-number">4</span> <strong>Professional English approach:</strong> Use "pre-scheduled" + be specific enough</p>
+    </div>
+
+    <div class="walkthrough-step">
+        <p><span class="step-number">5</span> <strong>Final professional response:</strong> "I'm afraid I can't make it at 2 PM. I have a pre-scheduled client call at that time."</p>
+    </div>
+
+    <div class="teacher-note mt-6">
+        <p class="font-bold mb-2">Key Learning:</p>
+        <p>Always specify what type of appointment you have. "I'm busy" sounds dismissive. "I have a pre-scheduled meeting" shows professionalism and respect for your calendar management.</p>
+    </div>
+</section>
+
+
+<!-- NEW SECTION: REGRET vs APOLOGY -->
+<section class="expression-block bg-card mb-12">
+    <h3 class="expression-title">😔 The Critical Difference: Regret vs. Apology</h3>
+
+    <!-- KEY INSIGHT BOX -->
+    <div class="regret-apology-box">
+        <h4 class="text-2xl font-bold text-center text-yellow-300 mb-4">🎯 KEY INSIGHT: Expressions in English vs Portuguese</h4>
+        <p class="text-center">In Portuguese, "Lamento" and "Sinto muito" are often used interchangeably. In English, "I'm afraid" and "I'm sorry" have distinct meanings and professional implications.</p>
+    </div>
+
+    <!-- REGRET SUBSECTION -->
+    <div class="subsection">
+        <h4 class="subsection-title">Regret (Lamento -- Regret is the strong feeling of sadness or disappointment - highly politeness and professionalism -- usually used in writing or on the phone to clients) - When Something is Beyond Your Control</h4>
+
+        <div class="visual-guide">
+            <p class="text-xl font-bold text-center mb-4">📌 KEY RULE: Use "I'm afraid..." or "Unfortunately..." when the situation is unfortunate but NOT your fault</p>
+        </div>
+
+        <div class="decision-matrix">
+            <div class="matrix-row">
+                <div class="matrix-icon check-icon">✓</div>
+                <div class="matrix-content">
+                    <p class="font-bold">The situation is unfortunate but not your fault</p>
+                    <div class="visual-sentence">
+                        🎯 Visualize: "The server crashed, and it's not my responsibility."
+                        <p class="font-bold">I'm afraid the server has crashed, so access is temporarily unavailable.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="matrix-row">
+                <div class="matrix-icon check-icon">✓</div>
+                <div class="matrix-content">
+                    <p class="font-bold">You're delivering bad news that affects both parties</p>
+                    <div class="visual-sentence">
+                        🎯 Visualize: "The meeting IS cancelled, and we're both affected."
+                        <p class="font-bold">I'm afraid the meeting has been cancelled, and we're both affected.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="matrix-row">
+                <div class="matrix-icon check-icon">✓</div>
+                <div class="matrix-content">
+                    <p class="font-bold">You wish things were different but they aren't</p>
+                    <div class="visual-sentence">
+                        🎯 Visualize: "I wish I could attend, but circumstances prevent it."
+                        <p class="font-bold">I'm afraid I won't be able to attend, as circumstances prevent it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="matrix-row">
+                <div class="matrix-icon check-icon">✓</div>
+                <div class="matrix-content">
+                    <p class="font-bold">It's more about the situation than your personal responsibility</p>
+                    <div class="visual-sentence">
+                        🎯 Visualize: "The problem is with the system, not with my actions."
+                        <p class="font-bold">I'm afraid the system is down, so we won't be able to do the demo today.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="practice-box mt-6">
+            <p class="portuguese-thought">💭 Brazilian Thought: "Lamento, mas o sistema está fora do ar e não conseguiremos fazer a demonstração hoje."</p>
+            <br><br>
+            <p class="english-answer">✅ English Expression: "I'm afraid the system is down, so we won't be able to do the demo today."</p>
+            <p class="text-sm mt-2">Notice: You're not apologizing for the system being down. You're expressing regret about the situation.</p>
+        </div>
+    </div>
+
+    <!-- APOLOGY SUBSECTION -->
+    <div class="subsection">
+        <h4 class="subsection-title">Apology (Sinto muito) - When You Take Responsibility</h4>
+
+        <div class="visual-guide" style="background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);">
+            <p class="text-xl font-bold text-center mb-4">📌 KEY RULE: Use "I'm sorry..." when YOU made a mistake or need to take personal responsibility</p>
+        
+        </div>
+
+        <div class="decision-matrix">
+            <div class="matrix-row">
+                <div class="matrix-icon cross-icon">✗</div>
+                <div class="matrix-content">
+                    <p class="font-bold">You made a mistake or oversight</p>
+                    <div class="visual-sentence">
+                        🎯 Visualize: "I forgot to send the email I promised."
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="matrix-row">
+                <div class="matrix-icon cross-icon">✗</div>
+                <div class="matrix-content">
+                    <p class="font-bold">You need to take personal responsibility</p>
+                    <div class="visual-sentence">
+                        🎯 Visualize: "The error in the report was my fault."
+                    </div>
+                </div>
+            </div>
+
+            <div class="matrix-row">
+                <div class="matrix-icon cross-icon">✗</div>
+                <div class="matrix-content">
+                    <p class="font-bold">You want to show empathy for ANY INCONVENIENCE CAUSED</p>
+                    <div class="visual-sentence">
+                        🎯 Visualize: "I understand my delay caused problems for you."
+                    </div>
+                </div>
+            </div>
+
+            <div class="matrix-row">
+                <div class="matrix-icon cross-icon">✗</div>
+                <div class="matrix-content">
+                    <p class="font-bold">It's more personal than situational</p>
+                    <div class="visual-sentence">
+                        🎯 Visualize: "My actions directly caused this issue."
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="practice-box mt-6">
+            <p class="portuguese-thought">💭 Brazilian Thought: "POXA, esqueci completamente da nossa reunião."</p>
+            <br><br>
+            <p class="english-answer">✅ English Expression: "I'm sorry, I completely forgot about our meeting."</p>
+            <br><br>
+            <p class="text-sm mt-2">Notice: You're apologizing for YOUR forgetfulness, not just regretting the situation.</p>
+            <br><br>
+        </div>
+    </div>
+
+    <!-- COMPARISON SUBSECTION -->
+    <div class="subsection">
+        <h4 class="subsection-title">Side-by-Side Comparison: When to Use Which</h4>
+        <br>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <p class="font-bold text-yellow-400">Situation 1: Flight Cancelled</p>
+                <p class="text-sm mt-2">Portuguese: "Lamento, mas meu voo foi cancelado."</p>
+                <p class="text-green-400 mt-2">English: "I'm afraid my flight was cancelled."</p>
+                <br><br>
+                <p class="text-xs mt-2">✅ Use REGRET - Not your fault</p>
+                <div class="visual-sentence mt-2">
+                    🎯 Visualize: "The airline cancelled, not your decision."
+                </div>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <p class="font-bold text-yellow-400">Situation 2: You Missed The Deadline</p>
+                <p class="text-sm mt-2">Portuguese: "Sinto muito, não entreguei o relatório a tempo."</p>
+                <p class="text-green-400 mt-2">English: "I'm sorry, I didn't submit the report on time."</p>
+                <p class="text-xs mt-2">✅ Use APOLOGY - Your responsibility</p>
+                <div class="visual-sentence mt-2">
+                    🎯 Visualize: "You missed the deadline you were responsible for."
+                </div>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <p class="font-bold text-yellow-400">Situation 3: Budget Cut (Your Decision)</p>
+                <p class="text-sm mt-2">Portuguese: "Sinto muito, mas precisamos cortar o orçamento do projeto."</p>
+                <p class="text-green-400 mt-2">English: "I'm sorry, but we need to cut the project budget."</p>
+                <p class="text-xs mt-2">✅ Use APOLOGY - You're making the decision</p>
+                <div class="visual-sentence mt-2">
+                    🎯 Visualize: "You're personally making this difficult decision."
+                </div>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <p class="font-bold text-yellow-400">Situation 4: Budget Cut (Company Decision)</p>
+                <p class="text-sm mt-2">Portuguese: "Lamento, mas a empresa decidiu cortar o orçamento."</p>
+                <p class="text-green-400 mt-2">English: "I'm afraid the company has decided to cut the budget."</p>
+                <p class="text-xs mt-2">✅ Use REGRET - Not your decision</p>
+                <div class="visual-sentence mt-2">
+                    🎯 Visualize: "The decision came from above, not from you."
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="examples-box">
+                <p><strong>Oversight</strong> means a mistake at work caused by missing a detail, forgetting something, or not checking properly.</p>
+                <p><strong>1.</strong> I sent the report without the final numbers. That was an oversight on my part.</p>
+                <p><strong>2.</strong> We missed the client’s deadline because the meeting was not added to the calendar. It was an oversight.</p>
+                <p><strong>3.</strong> I forgot to copy the manager into the email thread. That was simply an oversight.</p>
+            </div>
+            <br><br>
+
+            <!-- NEW SECTION: REGRET (LAMENTO) - REAL SITUATIONS EXPLAINED -->
+            <section class="expression-block bg-card mb-12">
+    <h3 class="expression-title">😔 Regret (Lamento) - When Something is Beyond Your Control</h3>
+    <br><br>
+
+    <div class="visual-guide">
+        <h4 class="text-2xl font-bold text-center text-teal-300 mb-4">📌 KEY RULE: Use "I'm afraid..." or "Unfortunately..." when the situation is unfortunate but NOT your fault</h4>
+        <p class="text-center">This is professional regret, not personal apology. You're acknowledging an unfortunate situation without taking blame.</p>
+    </div>
+
+    <!-- WHEN TO USE SECTION -->
+    <div class="decision-matrix">
+        <h4 class="text-xl font-bold text-blue-400 mb-4">When to Use "I'm afraid..." or "Unfortunately..."</h4>
+
+        <div class="matrix-row">
+            <div class="matrix-icon check-icon">✓</div>
+            <div class="matrix-content">
+                <p class="font-bold">The situation is unfortunate but not your fault</p>
+                <div class="visual-sentence">
+                    🎯 Visualize: "The server crashed, and it's not my responsibility."
+                </div>
+                <div class="real-example mt-2">
+                    <p class="text-sm"><strong>Real Situation:</strong> Company-wide system outage</p>
+                    <p class="text-xs">Portuguese: "Lamento, mas o sistema da empresa está fora do ar."</p>
+                    <p class="text-green-400 text-sm">English: "I'm afraid the company system is down."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="matrix-row">
+            <div class="matrix-icon check-icon">✓</div>
+            <div class="matrix-content">
+                <p class="font-bold">You're delivering bad news that affects both parties</p>
+                <div class="visual-sentence">
+                    🎯 Visualize: "The meeting is cancelled, and we're both affected."
+                </div>
+                <div class="real-example mt-2">
+                    <p class="text-sm"><strong>Real Situation:</strong> Conference room double-booked by facilities</p>
+                    <p class="text-xs">Portuguese: "Lamento, mas a sala de reunião foi reservada por outra equipe."</p>
+                    <p class="text-green-400 text-sm">English: "Unfortunately, the meeting room was booked by another team."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="matrix-row">
+            <div class="matrix-icon check-icon">✓</div>
+            <div class="matrix-content">
+                <p class="font-bold">You wish things were different but they aren't</p>
+                <div class="visual-sentence">
+                    🎯 Visualize: "I wish I could attend, but circumstances prevent it."
+                </div>
+                <div class="real-example mt-2">
+                    <p class="text-sm"><strong>Real Situation:</strong> Flight delayed due to weather</p>
+                    <p class="text-xs">Portuguese: "Lamento, mas meu voo foi atrasado por causa do clima."</p>
+                    <p class="text-green-400 text-sm">English: "I'm afraid my flight was delayed due to weather."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="matrix-row">
+            <div class="matrix-icon check-icon">✓</div>
+            <div class="matrix-content">
+                <p class="font-bold">It's more about the situation than your personal responsibility</p>
+                <div class="visual-sentence">
+                    🎯 Visualize: "The problem is with the system, not with my actions."
+                </div>
+                <div class="real-example mt-2">
+                    <p class="text-sm"><strong>Real Situation:</strong> Vendor delivery delayed</p>
+                    <p class="text-xs">Portuguese: "Lamento, mas o fornecedor atrasou a entrega."</p>
+                    <p class="text-green-400 text-sm">English: "Unfortunately, the vendor delayed the delivery."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- REAL-WORLD SCENARIOS -->
+    <div class="subsection">
+        <h4 class="subsection-title">Real-World Scenarios Explained</h4>
+
+        <div class="scenario-box">
+            <h5 class="font-bold text-orange-400 mb-3">Scenario 1: Technical Issues</h5>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="font-bold text-yellow-400">What Happened:</p>
+                    <p class="text-sm">The company's VPN server crashed during your presentation preparation</p>
+                    <p class="text-xs mt-2">✅ This is REGRET because:</p>
+                    <ul class="list-disc pl-4 text-xs space-y-1">
+                        <li>IT department manages the servers</li>
+                        <li>You didn't cause the crash</li>
+                        <li>It's a company infrastructure issue</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="font-bold text-green-400">Professional Response:</p>
+                    <p>"I'm afraid the VPN server is down, so I can't access the presentation files."</p>
+                    <p class="text-xs mt-2">🎯 Why this works: Shows regret without taking blame</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scenario-box mt-6">
+            <h5 class="font-bold text-orange-400 mb-3">Scenario 2: External Delays</h5>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="font-bold text-yellow-400">What Happened:</p>
+                    <p class="text-sm">Your flight from São Paulo to New York was cancelled by the airline</p>
+                    <p class="text-xs mt-2">✅ This is REGRET because:</p>
+                    <ul class="list-disc pl-4 text-xs space-y-1">
+                        <li>Airlines make cancellation or delay decisions</li>
+                        <li> The weather or operational issues cause delays</li>
+                        <li>You're a passenger, not the decision-maker</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="font-bold text-green-400">Professional Response:</p>
+                    <p>"Unfortunately, my flight was cancelled, so I won't be able to attend the meeting in person."</p>
+                    <p class="text-xs mt-2">🎯 Why this works: Acknowledges the situation professionally</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scenario-box mt-6">
+            <h5 class="font-bold text-orange-400 mb-3">Scenario 3: Team Member Issues</h5>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="font-bold text-yellow-400">What Happened:</p>
+                    <p class="text-sm">Your key team member called in sick on presentation day</p>
+                    <p class="text-xs mt-2">✅ This is REGRET because:</p>
+                    <ul class="list-disc pl-4 text-xs space-y-1">
+                        <li>You can't control someone's health</li>
+                        <li>Illness is unpredictable</li>
+                        <li>You're reporting a fact, not causing it</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="font-bold text-green-400">Professional Response:</p>
+                    <p>"I'm afraid our presenter is unwell today, so we'll need to reschedule the demo."</p>
+                    <p class="text-xs mt-2">🎯 Why this works: Professional and empathetic</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+<!-- NEW SECTION: BRAZILIAN COMMUNICATION STYLE EXPLAINED -->
+<section class="expression-block bg-card mb-12">
+    <h3 class="expression-title">🇧🇷 Brazilian Communication Style vs. Professional English</h3>
+
+    <div class="cultural-insight">
+        <h4 class="text-2xl font-bold text-center text-yellow-300 mb-4">🎯 Cultural Insight: Why Brazilians Don't Always Use "Sinto muito"</h4>
+        <p class="text-center">In Brazilian Portuguese, the distinction between "Lamento" and "Sinto muito" is often blurred in casual conversation. This creates challenges when translating to professional English where the distinction matters.</p>
+    </div>
+
+    <!-- BRAZILIAN COMMUNICATION PATTERNS -->
+    <div class="subsection">
+        <h4 class="subsection-title">How Brazilians Actually Communicate</h4>
+
+        <div class="communication-pattern">
+            <h5 class="font-bold text-orange-400 mb-3">Pattern 1: Direct Statement Without Discourse Markers</h5>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="font-bold text-yellow-400">What Brazilians Often Say:</p>
+                    <p>"Meu voo cancelou."</p>
+                    <p class="text-xs mt-2">Literal: "My flight cancelled."</p>
+                    <div class="visual-sentence mt-2">
+                        🎯 No "Lamento" or "Sinto muito" - Just stating the fact
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="font-bold text-green-400">Why This Happens:</p>
+                    <ul class="list-disc pl-4 text-sm space-y-1">
+                        <li>Brazilian Portuguese is more direct in casual settings</li>
+                        <li>Context often provides the emotional tone</li>
+                        <li>Discourse markers are optional in informal speech</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="communication-pattern mt-6">
+            <h5 class="font-bold text-orange-400 mb-3">Pattern 2: Using "Infelizmente" for Everything</h5>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="font-bold text-yellow-400">Brazilian Habit:</p>
+                    <p>"Infelizmente não vou conseguir."</p>
+                    <p>"Infelizmente errei o prazo."</p>
+                    <p class="text-xs mt-2">Using "Infelizmente" for both regret AND apology situations</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="font-bold text-green-400">The Problem:</p>
+                    <ul class="list-disc pl-4 text-sm space-y-1">
+                        <li>In English, "Unfortunately" is only for regret</li>
+                        <li>Using it for personal mistakes sounds evasive</li>
+                        <li>Can seem like you're avoiding responsibility</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="communication-pattern mt-6">
+            <h5 class="font-bold text-orange-400 mb-3">Pattern 3: Omitting the "Why"</h5>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="font-bold text-yellow-400">Brazilian Short Form:</p>
+                    <p>"Não vai dar."</p>
+                    <p>"Não posso."</p>
+                    <p class="text-xs mt-2">Literal: "It won't work." / "I can't."</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="font-bold text-green-400">International Expectation:</p>
+                    <ul class="list-disc pl-4 text-sm space-y-1">
+                        <li>English professionals expect a brief reason</li>
+                        <li>Just saying "I can't" sounds dismissive</li>
+                        <li>Always add "due to..." or "because..."</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BRIDGING THE GAP -->
+    <div class="subsection">
+        <h4 class="subsection-title">Bridging the Gap: From Brazilian Thought to Professional English</h4>
+
+        <div class="transformation-guide">
+            <h5 class="font-bold text-purple-400 mb-4">Step-by-Step Transformation Process</h5>
+
+            <div class="transformation-step">
+                <div class="transformation-number">1</div>
+                <div class="transformation-content">
+                    <p class="font-bold">Identify the Brazilian Thought Pattern</p>
+                    <p class="portuguese-thought">"Meu voo cancelou. Não vou conseguir chegar."</p>
+                    <p class="text-sm">Pattern: Direct statement + Simple refusal</p>
+                </div>
+            </div>
+
+            <div class="transformation-step">
+                <div class="transformation-number">2</div>
+                <div class="transformation-content">
+                    <p class="font-bold">Add the Missing Discourse Marker</p>
+                    <p>Ask: Is this regret or apology?</p>
+                    <p class="text-sm">Flight cancelled → External event → Use REGRET marker</p>
+                    <p>Add: "I'm afraid..." or "Unfortunately..."</p>
+                </div>
+            </div>
+
+            <div class="transformation-step">
+                <div class="transformation-number">3</div>
+                <div class="transformation-content">
+                    <p class="font-bold">Professionalize the Refusal</p>
+                    <p>Change: "Não vou conseguir chegar"</p>
+                    <p>To: "I won't be able to make it" or "I can't attend"</p>
+                </div>
+            </div>
+
+            <div class="transformation-step">
+                <div class="transformation-number">4</div>
+                <div class="transformation-content">
+                    <p class="font-bold">Add the Professional Connector</p>
+                    <p>Connect with: "due to..." (formal) or "because..." (casual)</p>
+                    <p class="text-sm">Never leave the reason implied</p>
+                </div>
+            </div>
+
+            <div class="transformation-step">
+                <div class="transformation-number">5</div>
+                <div class="transformation-content">
+                    <p class="font-bold">Final Professional Version</p>
+                    <p class="english-answer">✅ "I'm afraid I won't be able to make it due to a flight cancellation."</p>
+                    <p class="text-sm">Complete, professional, and culturally appropriate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIDE-BY-SIDE COMPARISON WITH EXPLANATION -->
+    <div class="subsection">
+        <h4 class="subsection-title">Side-by-Side Comparison: With Brazilian Context Explained</h4>
+
+        <div class="comparison-grid">
+            <div class="comparison-item">
+                <div class="comparison-header">
+                    <p class="font-bold text-yellow-400">Situation 1: Flight Cancelled</p>
+                </div>
+                <div class="comparison-body">
+                    <p class="text-sm"><strong>Portuguese:</strong> "Lamento, mas meu voo foi cancelado."</p>
+                    <p class="text-green-400"><strong>English:</strong> "I'm afraid my flight was cancelled."</p>
+                    <div class="cultural-note mt-2">
+                        <p class="text-xs"><strong>Brazilian Context:</strong> Many Brazilians would just say "Meu voo cancelou" without "Lamento." Adding "I'm afraid" bridges this gap.</p>
+                    </div>
+                    <div class="visual-sentence mt-2">
+                        ✅ Use REGRET - The airline's decision, not yours
+                    </div>
+                </div>
+            </div>
+
+            <div class="comparison-item">
+                <div class="comparison-header">
+                    <p class="font-bold text-yellow-400">Situation —2: You Missed Deadline</p>
+                </div>
+                <div class="comparison-body">
+                    <p class="text-sm"><strong>Portuguese:</strong> "Sinto muito, não entreguei o relatório a tempo."</p>
+                    <p class="text-green-400"><strong>English:</strong> "I'm sorry, I didn't submit the report on time."</p>
+                    <div class="cultural-note mt-2">
+                        <p class="text-xs"><strong>Brazilian Context:</strong> Some Brazilians might say "Infelizmente atrasei o relatório" which translates poorly to "Unfortunately I delayed the report."</p>
+                    </div>
+                    <div class="visual-sentence mt-2">
+                        ✅ Use APOLOGY - Your direct responsibility
+                    </div>
+                </div>
+            </div>
+
+            <div class="comparison-item">
+                <div class="comparison-header">
+                    <p class="font-bold text-yellow-400">Situation 3: Budget Cut (Your Decision)</p>
+                </div>
+                <div class="comparison-body">
+                    <p class="text-sm"><strong>Portuguese:</strong> "Sinto muito, mas precisamos cortar o orçamento do projeto."</p>
+                    <p class="text-green-400"><strong>English:</strong> "I'm sorry, but we need to cut the project budget."</p>
+                    <div class="cultural-note mt-2">
+                        <p class="text-xs"><strong>Brazilian Context:</strong> The "Sinto muito" here acknowledges the difficulty of the decision, not necessarily taking personal blame.</p>
+                    </div>
+                    <div class="visual-sentence mt-2">
+                        ✅ Use APOLOGY - You're making this difficult decision
+                    </div>
+                </div>
+            </div>
+
+            <div class="comparison-item">
+                <div class="comparison-header">
+                    <p class="font-bold text-yellow-400">Situation 4: Budget Cut (Company Decision)</p>
+                </div>
+                <div class="comparison-body">
+                    <p class="text-sm"><strong>Portuguese:</strong> "Lamento, mas a empresa decidiu cortar o orçamento."</p>
+                    <p class="text-green-400"><strong>English:</strong> "I'm afraid the company has decided to cut the budget."</p>
+                    <div class="cultural-note mt-2">
+                        <p class="text-xs"><strong>Brazilian Context:</strong> Even though you're delivering the news, you're not the decision-maker. "I'm afraid" shows you're on the same side as the listener.</p>
+                    </div>
+                    <div class="visual-sentence mt-2">
+                        ✅ Use REGRET - The decision came from above
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PRACTICAL RULE -->
+    <div class="teacher-note mt-6">
+        <p class="font-bold mb-2">Practical Rule for Brazilians:</p>
+        <p>When translating from Portuguese to English, <strong>always add a discourse marker</strong> even if you wouldn't use one in Portuguese. Ask yourself: "Is this something I control?" If YES → Use "I'm sorry." If NO → Use "I'm afraid." This simple rule bridges the Brazilian directness with English professional expectations.</p>
+    </div>
+
+    <!-- MEMORY AID -->
+    <div class="visual-guide mt-6" style="background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);">
+        <h4 class="text-2xl font-bold text-center text-purple-300 mb-4">🎯 Memory Aid: The Brazilian-to-English Bridge</h4>
+
+        <div class="bridge-diagram">
+            <div class="bridge-step">
+                <div class="bridge-icon">🇧🇷</div>
+                <div class="bridge-content">
+                    <p class="font-bold">Brazilian Style</p>
+                    <p>Often direct, context-dependent, discourse markers optional</p>
+                </div>
+            </div>
+
+            <div class="bridge-arrow">→</div>
+
+            <div class="bridge-step">
+                <div class="bridge-icon">❓</div>
+                <div class="bridge-content">
+                    <p class="font-bold">Ask This Question</p>
+                    <p>"Did I cause this or control it?"</p>
+                </div>
+            </div>
+
+            <div class="bridge-arrow">→</div>
+
+            <div class="bridge-step">
+                <div class="bridge-icon">🇺🇸</div>
+                <div class="bridge-content">
+                    <p class="font-bold">English Professional Style</p>
+                    <p>YES → "I'm sorry" / NO → "I'm afraid"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- NEW SECTION: THE 8 BUILDING BLOCKS OF PROFESSIONAL COMMUNICATION -->
+<section class="expression-block bg-card mb-12">
+    <h3 class="expression-title">🧱 The 8 Building Blocks of Professional Communication</h3>
+
+    <div class="lego-intro">
+        <h4 class="text-2xl font-bold text-center text-yellow-300 mb-4">Build Your Professional Sentences Like LEGO</h4>
+        <p class="text-center">Each phrase is a building block that fits with others to create seamless, professional communication. Mix and match these blocks based on your situation.</p>
+    <br><br>
+</div>
+
+    <!-- BLOCK 1 -->
+    <div class="block-container">
+        <div class="block-header">
+            <div class="block-number">1</div>
+            <div class="block-title">
+                <h4 class="text-xl font-bold text-blue-400">The First Block: The Soft Touch</h4>
+                <br>
+                <p class="text-sm">Always start with a polite introduction</p>
+            </div>
+        </div>
+        <div class="block-content">
+            <div class="key-phrase">
+                <p class="font-bold text-2xl text-center text-yellow-400">I am afraid...</p>
+            </div>
+            <div class="explanation-grid">
+                <div class="portuguese-side">
+                    <p class="font-bold text-yellow-400">Portuguese Equivalent:</p>
+                    <p>"Infelizmente..."</p>
+                </div>
+                <div class="english-side">
+                    <p class="font-bold text-green-400">What It Really Means:</p>
+                    <p>This phrase doesn't mean "I'm scared"! It's a very polite way to deliver bad news, like "I'm sorry, but..." or "Unfortunately..."</p>
+                </div>
+            </div>
+            <div class="teacher-note">
+                <p class="font-bold">Professional Value:</p>
+                <p>Using it shows respect and professionalism. It softens the message before delivering any refusal.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOCK 2 -->
+    <div class="block-container">
+        <div class="block-header">
+            <div class="block-number">2</div>
+            <div class="block-title">
+                <h4 class="text-xl font-bold text-blue-400">The Second Block: The Empathetic Refusal</h4>
+                <p class="text-sm">Be direct and clear about what you can't do</p>
+            </div>
+        </div>
+        <div class="block-content">
+            <div class="key-phrase">
+                <p class="font-bold text-2xl text-center text-yellow-400">I can't make it = FIXED EXPRESSION of 4 WORDS.</p>
+            </div>
+            <div class="explanation-grid">
+                <div class="portuguese-side">
+                    <p class="font-bold text-yellow-400">Portuguese Equivalent:</p>
+                    <p>"Não vou conseguir"</p>
+                </div>
+                <div class="english-side">
+                    <p class="font-bold text-green-400">Why It's Better:</p>
+                    <p>This is the professional way to say "I can't go," "I can't attend," or "I won't be able to." It is much more polite than just "I can't go." or "I'm busy."</p>
+                </div>
+            </div>
+            <div class="comparison-box">
+                <div class="bad-example">
+                    <p class="font-bold text-red-400">❌ Avoid:</p>
+                    <p>"I can't go" (sounds abrupt)</p>
+                    <p>"I'm busy" (sounds dismissive)</p>
+                </div>
+                <div class="good-example">
+                    <p class="font-bold text-green-400">✅ Use:</p>
+                    <p>"I can't make it" (professional)</p>
+                    <p>"I won't be able to attend" (formal)</p>
+                    <p>"I won't be able to attend = I can't make it" (both are correct and mean the same thing)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOCK 3 -->
+    <div class="block-container">
+        <div class="block-header">
+            <div class="block-number">3</div>
+            <div class="block-title">
+                <h4 class="text-xl font-bold text-blue-400">The Third Block: The Professional Justification</h4>
+                <p class="text-sm">Give a brief and clear reason</p>
+            </div>
+        </div>
+        <div class="block-content">
+            <div class="key-phrase">
+                <p class="font-bold text-2xl text-center text-yellow-400">I have a prior commitment. / I am double-booked.</p>
+            </div>
+            <div class="explanation-grid">
+                <div class="portuguese-side">
+                    <p class="font-bold text-yellow-400">Portuguese Equivalent:</p>
+                    <p>"Tenho um compromisso pré-existente" / "Tenho dois compromissos no mesmo horário"</p>
+                </div>
+                <div class="english-side">
+                    <p class="font-bold text-green-400">Explanation:</p>
+                    <p>The first means you already have a scheduled engagement. The second, slightly more informal but still professional, means your calendar has two events at the same time.</p>
+                </div>
+            </div>
+            <div class="teacher-note">
+                <p class="font-bold">Key Insight:</p>
+                <p>Both are better than the vague "I'm busy." They show you manage your calendar professionally.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOCK 4 -->
+    <div class="block-container">
+        <div class="block-header">
+            <div class="block-number">4</div>
+            <div class="block-title">
+                <h4 class="text-xl font-bold text-blue-400">The Fourth Block: The Unforeseen Event</h4>
+                <p class="text-sm">For last-minute situations</p>
+            </div>
+        </div>
+        <div class="block-content">
+            <div class="key-phrase">
+                <p class="font-bold text-2xl text-center text-yellow-400">Something just came up</p>
+            </div>
+            <div class="explanation-grid">
+                <div class="portuguese-side">
+                    <p class="font-bold text-yellow-400">Portuguese Equivalent:</p>
+                    <p>"Algo de última hora surgiu"</p>
+                </div>
+                <div class="english-side">
+                    <p class="font-bold text-green-400">Professional Variations - surgiu um imprevisto:</p>
+                    <ul class="list-disc pl-4 space-y-1">
+                        <li>"Something urgent just popped up."</li>
+                        <li>"Something unexpected just came up."</li>
+                        <li>"A critical issue just arose."</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="teacher-note">
+                <p class="font-bold">When to Use:</p>
+                <p>All these phrases mean that something unexpected and important has happened, and you need to deal with it immediately. It's a professional and polite way to communicate an unforeseen event.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOCK 5 -->
+    <div class="block-container">
+        <div class="block-header">
+            <div class="block-number">5</div>
+            <div class="block-title">
+                <h4 class="text-xl font-bold text-blue-400">The Fifth Block: The Solution</h4>
+                <p class="text-sm">Don't just decline or refuse, offer an alternative which is very important</p>
+            </div>
+        </div>
+        <div class="block-content">
+            <div class="solution-options">
+                <div class="solution-option">
+                    <div class="solution-phrase">
+                        <p class="font-bold text-xl text-center text-green-400">"May I take a rain check?"</p>
+                    </div>
+                    <div class="solution-explanation">
+                        <p class="font-bold text-yellow-400">Portuguese Equivalent:</p>
+                        <p>"Podemos deixar para outro dia?"</p>
+                        <p class="text-sm mt-1">This phrase, which literally means "can I get a ticket for a rainy day?", is a very common idiom to propose postponing an engagement to an undefined future date.</p>
+                    </div>
+                </div>
+
+                <div class="solution-option">
+                    <div class="solution-phrase">
+                        <p class="font-bold text-xl text-center text-green-400">"Would you mind if we reschedule?"</p>
+                        <p class="font-bold text-xl text-center text-green-400">"Would you mind if we .... = classic and learn it by heart? "</p>
+                    </div>
+                    <div class="solution-explanation">
+                        <p class="font-bold text-yellow-400">Portuguese Equivalent:</p>
+                        <p>"Você se importaria se remarcássemos?"</p>
+                        <p class="text-sm mt-1">This is a direct and polite question that immediately suggests rescheduling the commitment for a new day and time, showing that you are still committed.</p>
+                    <br>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOCK 6 -->
+    <div class="block-container">
+        <div class="block-header">
+            <div class="block-number">6</div>
+            <div class="block-title">
+                <h4 class="text-xl font-bold text-blue-400">The Sixth Block: The Empathy</h4>
+                <p class="text-sm">Show you care about the other person's schedule</p>
+            </div>
+        </div>
+        <div class="block-content">
+            <div class="key-phrase">
+                <p class="font-bold text-2xl text-center text-yellow-400">I am sorry.</p>
+            </div>
+            <div class="explanation-grid">
+                <div class="portuguese-side">
+                    <p class="font-bold text-yellow-400">Portuguese Equivalent:</p>
+                    <p>"Sinto muito"</p>
+                </div>
+                <div class="english-side">
+                    <p class="font-bold text-green-400">When to Add It:</p>
+                    <p>Although "I am afraid" already has a touch of apology, adding "I am sorry" to the beginning of the complete sentence demonstrates even more politeness and empathy, which is highly valued in the American workplace.</p>
+                </div>
+            </div>
+            <div class="example-box">
+                <p class="font-bold">Complete Example:</p>
+                <p>"<span class="text-blue-400">I'm sorry</span>, but <span class="text-yellow-400">I'm afraid I can't make it</span> <span class="text-green-400">due to a prior commitment</span>."</p>
+            <br><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOCK 7 -->
+    <div class="block-container">
+        <div class="block-header">
+            <div class="block-number">7</div>
+            <div class="block-title">
+                <h4 class="text-xl font-bold text-blue-400">The Seventh Block: The Rescheduling Proposal</h4>
+                <br>
+                <p class="text-sm">Make proposals in a friendly, professional way</p>
+            </div>
+        </div>
+        <div class="block-content">
+            <div class="proposal-options">
+                <div class="proposal-option">
+                    <p class="font-bold text-lg text-green-400">"How about...?"</p>
+                    <p class="font-bold text-lg text-green-400">"What about...?"</p>
+
+                    <p class="text-sm">Portuguese: "Que tal...? / Que vc acha...?"</p>
+                    <p class="text-xs">Ideal for suggesting a date or time in a friendly manner.</p>
+                    <p class="example-text">Example: "<strong>How about</strong> Thursday at 3 PM? - brief and direct"</p>
+                </div>
+
+                <div class="proposal-option">
+                    <p class="font-bold text-lg text-green-400">"How's that for...?"</p>
+                    <p class="text-sm">Portuguese: "O que acha de...?"</p>
+                    <p class="text-xs">A great way to offer an alternative and ask for the other person's opinion.</p>
+                    <p class="example-text">Example: "I can do next Tuesday, <strong>how's that for</strong> a new time?"</p>
+                </div>
+
+                <div class="proposal-option">
+                    <p class="font-bold text-lg text-green-400">"Would tomorrow work for you?"</p>
+                    <p class="text-sm">Portuguese: "Amanhã daria certo para você?"</p>
+                    <p class="text-xs">Another direct and polite alternative for checking someone's availability.</p>
+                <br><br>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOCK 8 -->
+    <div class="block-container">
+        <div class="block-header">
+            <div class="block-number">8</div>
+            <div class="block-title">
+                <h4 class="text-xl font-bold text-blue-400">The Eighth Block: The Confirmation</h4>
+                <p class="text-sm">Confirm your attendance clearly and positively</p>
+            <br>
+        </div>
+        </div>
+        <div class="block-content">
+            <div class="confirmation-options">
+                <div class="confirmation-option">
+                    <p class="font-bold text-lg text-green-400">"I can make it = positive for 'I can't make it'."</p>
+                    <p class="text-sm">Portuguese: "Eu consigo ir"</p>
+                    <p class="text-xs">The direct and most common confirmation, used to say "I can go" or "I will be able to."</p>
+                <br>
+            </div>
+
+                <div class="confirmation-option">
+                    <p class="font-bold text-lg text-green-400">"I'll be there."</p>
+                    <p class="text-sm">Portuguese: "Estarei lá"</p>
+                    <p class="text-xs">A little more casual and emphatic - used in specific situation to show your presence at the place .. party, etc, it means "I will be there" and conveys a strong intention to attend.</p>
+                <br>
+            </div>
+
+                <div class="confirmation-option">
+                    <p class="font-bold text-lg text-green-400">"Looking forward to it!"</p>
+                    <p class="text-sm">Portuguese: "Estou ansioso por isso!"</p>
+                    <p class="text-xs">This phrase not only confirms your presence but also expresses enthusiasm. It's ideal for social events, happy hours, or any enjoyable gathering.</p>
+                <br>
+            </div>
+
+                <div class="confirmation-option">
+                    <p class="font-bold text-lg text-green-400">"See you there!"</p>
+                    <p class="text-sm">Portuguese: "A gente se vê lá!"</p>
+                    <p class="text-xs">A casual and friendly phrase used to confirm that you will be present and are excited about the idea. It's a common goodbye for informal get-togethers.</p>
+                <br><br><br>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PUTTING IT ALL TOGETHER -->
+    <div class="putting-together">
+        <h4 class="text-2xl font-bold text-center text-purple-400 mb-6">🎯 Putting It All Together: Example Sentences</h4>
+        <br>
+        <div class="example-sentences">
+            <div class="example-sentence">
+                <p class="font-bold text-yellow-400">Declining with Professionalism:</p>
+                <p>"<span class="text-blue-400">I'm afraid</span> <span class="text-yellow-400">I can't make it</span> <span class="text-green-400">due to a prior commitment</span>. <span class="text-purple-400">Would you mind if we reschedule?</span>"</p>
+            <br>
+        </div>
+
+            <div class="example-sentence">
+                <p class="font-bold text-yellow-400">Last-Minute Change:</p>
+                <p>"<span class="text-red-400">I'm sorry</span>, but <span class="text-blue-400">something urgent just came up</span>. <span class="text-yellow-400">May I take a rain check?</span>"</p>
+            <br>
+        </div>
+
+            <div class="example-sentence">
+                <p class="font-bold text-yellow-400">Rescheduling Proposal:</p>
+                <p>"<span class="text-blue-400">I'm afraid I'm double-booked</span> at that time. <span class="text-purple-400">How about</span> we meet tomorrow at 2 PM instead?"</p>
+            <br>
+        </div>
+
+            <div class="example-sentence">
+                <p class="font-bold text-yellow-400">Positive Confirmation:</p>
+                <p>"<span class="text-green-400">I can make it</span> to the meeting! <span class="text-purple-400">Looking forward to it! (important expression and take note)</span>"</p>
+                <p>"<span class="text-green-400">I can make it</span> to the meeting! <span class="text-purple-400">NEVER SAY!</span>"I can do it</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- NEW SECTION: "TAKE A RAIN CHECK" MASTERCLASS -->
+<section class="expression-block bg-card mb-12">
+    <h3 class="expression-title">🌧️ Masterclass: "Take a Rain Check" - The Ultimate Solution Block</h3>
+
+    <div class="rain-check-master">
+        <h4 class="text-2xl font-bold text-center text-blue-300 mb-4">What does "Take a rain check" really mean?</h4>
+        <h4 class="text-2xl font-bold text-center text-blue-300 mb-4">In short: "Take a rain check" or briefly say "Raincheck" means "I can't do or make this now, but I want to do it later."</h4>
+
+        <div class="expression-comparison">
+            <div class="portuguese-side">
+                <p class="font-bold text-yellow-400">Portuguese Equivalent:</p>
+                <p>"Podemos deixar para outro dia?"</p>
+                <p class="text-sm mt-2">Literally: "Can we leave it for another day?"</p>
+            </div>
+            <div class="english-side">
+                <p class="font-bold text-green-400">English Expression:</p>
+                <p>"Can I take a rain check?"</p>
+                <p class="text-sm mt-2">Origin: Baseball term for ticket to a postponed game</p>
+            </div>
+        </div>
+
+        <div class="teacher-note mt-4">
+            <p class="font-bold mb-2">The Magic of This Expression:</p>
+            <p>"Take a rain check" is NOT about weather! It's a friendly, professional way to say: "I can't do this now, but I genuinely want to do it later." It shows commitment while postponing.</p>
+        </div>
+    </div>
+
+    <!-- WHEN TO USE RAIN CHECK VS RESCHEDULE -->
+    <div class="decision-guide">
+        <h4 class="text-xl font-bold text-blue-400 mb-4">When to Use "Take a rain check" vs. "Reschedule"</h4>
+
+        <div class="guide-row">
+            <div class="guide-icon">🌧️</div>
+            <div class="guide-content">
+                <p class="font-bold text-green-400">Use "Take a rain check" when:</p>
+                <ul class="list-disc pl-4 text-sm space-y-1">
+                    <li>It's a social or informal work event (lunch, happy hour, coffee chat)</li>
+                    <li>You don't have a specific alternative date in mind</li>
+                    <li>You want to sound friendly and casual but still professional</li>
+                    <li>The other person suggested the meeting/event</li>
+                    <li>You genuinely want to do it later but can't commit to a specific time</li>
+                </ul>
+                <div class="example-box mt-2">
+                    <p class="font-bold">Example:</p>
+                    <p>"I'd love to join for lunch, but can I take a rain check?"</p>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="guide-row">
+            <div class="guide-icon">📅</div>
+            <div class="guide-content">
+                <p class="font-bold text-blue-400">Use "Reschedule" when:</p>
+                <ul class="list-disc pl-4 text-sm space-y-1">
+                    <li>It's a formal business meeting (client review, project update, performance review)</li>
+                    <li>You have specific alternative dates to propose</li>
+                    <li>You need to be more direct and clear about timing</li>
+                    <li>You initiated the meeting/event</li>
+                    <li>The meeting has a specific agenda or deliverables</li>
+                </ul>
+                <div class="example-box mt-2">
+                    <p class="font-bold">Example:</p>
+                    <p>"(Would you mind if = fixed expression) we reschedule for next Tuesday?"</p>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BRAZILIAN THOUGHT TRANSFORMATION -->
+    <div class="subsection">
+        <h4 class="subsection-title">Practice: Brazilian Thought to "Rain Check"</h4>
+
+        <div class="transformation-guide">
+            <div class="transformation-step">
+                <div class="transformation-number">1</div>
+                <div class="transformation-content">
+                    <p class="font-bold">Situation 1: Team Happy Hour</p>
+                    <p class="portuguese-thought">"Poxa, queria muito ir no happy hour com o time, mas hoje não vai dar. Podemos marcar outra hora?"</p>
+                </div>
+            </div>
+
+            <div class="transformation-step">
+                <div class="transformation-number">2</div>
+                <div class="transformation-content">
+                    <p class="font-bold">Identify the elements:</p>
+                    <ul class="list-disc pl-4 text-sm">
+                        <li>Social event → Use "rain check"</li>
+                        <li>No specific alternative date → Perfect for rain check</li>
+                        <li>Genuine interest → Shows commitment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="transformation-step">
+                <div class="transformation-number">3</div>
+                <div class="transformation-content">
+                    <p class="font-bold">Professional English:</p>
+                    <p class="english-answer">✅ "I'd love to join the team happy hour, but can I take a rain check?"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="transformation-guide mt-6">
+            <div class="transformation-step">
+                <div class="transformation-number">1</div>
+                <div class="transformation-content">
+                    <p class="font-bold">Situation 2: Informal Project Discussion</p>
+                    <p class="portuguese-thought">"Gostaria de discutir esse projeto com você, mas estou sobrecarregado hoje. Podemos deixar para semana que vem?"</p>
+                </div>
+            </div>
+
+            <div class="transformation-step">
+                <div class="transformation-number">2</div>
+                <div class="transformation-content">
+                    <p class="font-bold">Identify the elements:</p>
+                    <ul class="list-disc pl-4 text-sm">
+                        <li>Informal work discussion → Borderline case</li>
+                        <li>Has specific timing ("semana que vem") → Could use either</li>
+                        <li>Better to be specific → Use "reschedule"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="transformation-step">
+                <div class="transformation-number">3</div>
+                <div class="transformation-content">
+                    <p class="font-bold">Professional English:</p>
+                    <p class="english-answer">✅ "I'd like to discuss this project, but I'm swamped today. Can we reschedule for next week?"</p>
+                <br><br><br>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CULTURAL INSIGHTS -->
+    <div class="cultural-insight">
+        <h4 class="text-xl font-bold text-center text-yellow-300 mb-4">🎯 Cultural Insights for Brazilian Professionals</h4>
+
+        <div class="insight-grid">
+            <div class="insight-item">
+                <p class="font-bold text-green-400">Why Brazilians Might Struggle:</p>
+                <ul class="list-disc pl-4 text-sm space-y-1">
+                    <li>Portuguese often uses "deixar para outro dia" for both formal and informal situations</li>
+                    <li>The distinction between social and business events is less clear in Brazilian culture</li>
+                    <li>"Podemos marcar outra hora?" is used universally</li>
+                    <br><br>
+                </ul>
+            </div>
+
+            <div class="insight-item">
+                <p class="font-bold text-blue-400">International Business Expectation:</p>
+                <ul class="list-disc pl-4 text-sm space-y-1">
+                    <li>Clear distinction between social (rain check) and business (reschedule)</li>
+                    <li>"Rain check" implies flexibility and future interest</li>
+                    <li>"Reschedule" implies commitment to a specific new time</li>
+                    <br><br>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRACTICAL DECISION FLOWCHART -->
+    <div class="flow-chart">
+        <h4 class="text-xl font-bold text-center text-teal-300 mb-4">📊 Decision Flowchart: Rain Check or Reschedule?</h4>
+
+        <div class="flow-step">
+            <div class="flow-icon">❓</div>
+            <div class="flow-content">
+                <p class="font-bold">Question 1: Is this a social event or informal gathering?</p>
+                <p class="text-sm">Lunch, coffee, happy hour, team building → YES → Use "Rain Check"</p>
+                <p class="text-sm">Client meeting, project review, formal discussion → NO → Continue</p>
+            </div>
+        </div>
+
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-step">
+            <div class="flow-icon">❓</div>
+            <div class="flow-content">
+                <p class="font-bold">Question 2: Do you have specific alternative dates in mind?</p>
+                <p class="text-sm">Yes, I know exactly when I'm free → Use "Reschedule"</p>
+                <p class="text-sm">No, I need to check my calendar later → Use "Rain Check"</p>
+            </div>
+        </div>
+
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-step">
+            <div class="flow-icon">❓</div>
+            <div class="flow-content">
+                <p class="font-bold">Question 3: Who initiated the meeting?</p>
+                <p class="text-sm">They invited you → Use "Rain Check" (shows appreciation for invitation)</p>
+                <p class="text-sm">You invited them → Use "Reschedule" (takes responsibility for finding new time)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMMON MISTAKES TO AVOID -->
+    <div class="subsection">
+        <h4 class="subsection-title">Common Mistakes Brazilian Professionals Make</h4>
+        <br><br>
+
+        <div class="mistake-list">
+            <div class="mistake-item">
+                <p class="font-bold text-red-400">❌ Mistake 1: Using "rain check" for formal meetings</p>
+                <p class="text-sm">"Can I take a rain check on our quarterly review?" → Sounds unprofessional</p>
+                <p class="text-green-400">✅ Correction: "Would you mind if we reschedule our quarterly review?"</p>
+                <br>
+            </div>
+
+            <div class="mistake-item">
+                <p class="font-bold text-red-400">❌ Mistake 2: Using "reschedule" for social events</p>
+                <p class="text-sm">"Let's reschedule our coffee chat" → Sounds too formal and cold</p>
+                <p class="text-green-400">✅ Correction: "Can I take a rain check on our coffee chat?"</p>
+                <br>
+            </div>
+
+            <div class="mistake-item">
+                <p class="font-bold text-red-400">❌ Mistake 3: Literal translation</p>
+                <p class="text-sm">"Can we leave for another day?" → Direct translation sounds awkward</p>
+                <p class="text-green-400">✅ Correction: "Can I take a rain check?" (idiomatic and natural)</p>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- VARIATIONS AND ALTERNATIVES -->
+    <div class="variations-box">
+        <h4 class="text-xl font-bold text-purple-400 mb-4">🌧️ Variations of "Take a Rain Check"</h4>
+
+        <div class="variation-grid">
+            <div class="variation-item">
+                <p class="font-bold text-green-400">Most Common:</p>
+                <p>"Can I take a rain check?"</p>
+                <p class="text-xs">Standard professional version</p>
+                <br>
+            </div>
+
+            <div class="variation-item">
+                <p class="font-bold text-blue-400">More Casual:</p>
+                <p>"Mind if I take a rain check?"</p>
+                <p class="text-xs">Slightly more informal, still professional</p>
+                <br>
+            </div>
+
+            <div class="variation-item">
+                <p class="font-bold text-yellow-400">Very Polite:</p>
+                <p>"I'd love to, but could I take a rain check?"</p>
+                <p class="text-xs">Shows enthusiasm before declining</p>
+                <br>
+            </div>
+
+            <div class="variation-item">
+                <p class="font-bold text-orange-400">Future-Oriented:</p>
+                <p>"Rain check for next time?"</p>
+                <p class="text-xs">Very casual, for close colleagues</p>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="teacher-note mt-6">
+        <p class="font-bold mb-2">Key Learning:</p>
+        <p>For Brazilian professionals: Use <strong>"rain check"</strong> for social/informal events to show you're interested but can't commit now. Use <strong>"reschedule"</strong> for formal business meetings when you need to be specific about timing. This distinction shows cultural awareness and professional maturity in international business contexts.</p>
+    </div>
+</section>
+
+<!-- NEW SECTION: "I CAN'T MAKE IT" DEEP DIVE -->
+<section class="expression-block bg-card mb-12">
+    <h3 class="expression-title">🎯 Deep Dive: "I can't make it" - The Professional Refusal</h3>
+
+    <div class="i-cant-make-it-deep">
+        <h4 class="text-2xl font-bold text-center text-green-300 mb-4">Why "I can't make it" is better than "I can't go"</h4>
+
+        <div class="comparison-grid">
+            <div class="comparison-item bad">
+                <div class="comparison-icon">❌</div>
+                <div class="comparison-content">
+                    <p class="font-bold text-red-400">"I can't go"</p>
+                    <ul class="list-disc pl-4 text-sm space-y-1">
+                        <li>Sounds abrupt, childish, or dismissive</li>
+                        <li>Like a child refusing to do something</li>
+                        <li>Too direct and lacks professionalism</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="comparison-item warning">
+                <div class="comparison-icon">⚠️</div>
+                <div class="comparison-content">
+                    <p class="font-bold text-yellow-400">"I'm busy"</p>
+                    <ul class="list-disc pl-4 text-sm space-y-1">
+                        <li>Sounds vague, like you're hiding something</li>
+                        <li>Can seem dismissive or uninterested</li>
+                        <li>Doesn't show respect for the other person's time</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="comparison-item good">
+                <div class="comparison-icon">✅</div>
+                <div class="comparison-content">
+                    <p class="font-bold text-green-400">"I can't make it"</p>
+                    <ul class="list-disc pl-4 text-sm space-y-1">
+                        <li>Professional, shows effort was considered</li>
+                        <li>Implies you tried but circumstances prevent</li>
+                        <li>Respectful and shows you value the invitation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THE FORMULA -->
+    <div class="formula-box">
+        <h4 class="text-2xl font-bold text-center text-teal-300 mb-4">The Formula: Subject + Can't + Make + It</h4>
+
+        <div class="formula-breakdown">
+            <div class="formula-part">
+                <div class="formula-label">Subject</div>
+                <div class="formula-content">
+                    <p>I / We</p>
+                    <p class="text-xs">The person declining</p>
+                </div>
+            </div>
+
+            <div class="formula-operator">+</div>
+
+            <div class="formula-part">
+                <div class="formula-label">Can't</div>
+                <div class="formula-content">
+                    <p>Cannot</p>
+                    <p class="text-xs">The negation</p>
+                </div>
+            </div>
+
+            <div class="formula-operator">+</div>
+
+            <div class="formula-part">
+                <div class="formula-label">Make</div>
+                <div class="formula-content">
+                    <p>Fixed verb</p>
+                    <p class="text-xs">Never changes</p>
+                </div>
+            </div>
+
+            <div class="formula-operator">+</div>
+
+            <div class="formula-part">
+                <div class="formula-label">It</div>
+                <div class="formula-content">
+                    <p>Fixed pronoun</p>
+                    <p class="text-xs">Never changes</p>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="warning-box">
+            <p class="font-bold text-center text-red-400">🚫 NEVER CHANGE THIS STRUCTURE 🚫</p>
+            <p class="text-center">"I can't make it" is a fixed expression. Don't say "I can't do it" or "I can't go."</p>
+            <br><br>
+        </div>
+    </div>
+
+    <!-- COMMON BRAZILIAN MISTAKES -->
+    <div class="subsection">
+        <h4 class="subsection-title">Common Brazilian Mistakes with "I can't make it"</h4>
+
+        <div class="mistake-examples">
+            <div class="mistake-item">
+                <p class="font-bold text-red-400">❌ Mistake 1: Literal Translation</p>
+                <p class="text-sm">Portuguese: "Não vou conseguir ir"</p>
+                <br>
+                <p class="text-sm">Literal translation: "I won't be able to go"</p>
+                <br>
+                <p class="text-green-400">✅ Professional version: "I can't make it"</p>
+                <br>
+                <div class="explanation">
+                    <p class="text-xs">"I won't be able to go" is grammatically correct but sounds less natural than the fixed expression "I can't make it."</p>
+                <br>
+            </div>
+            </div>
+
+            <div class="mistake-item">
+                <p class="font-bold text-red-400">❌ Mistake 2: Changing the Verb</p>
+                <p class="text-sm">"I can't do it" (for meetings/events)</p>
+                <br>
+                <p class="text-sm">"I can't attend it" (awkward phrasing)</p>
+                <br>
+                <p class="text-green-400">✅ Correct: "I can't make it"</p>
+                <br>
+                <div class="explanation">
+                    <p class="text-xs">"Do it" is for tasks, not attendance. "Attend it" is grammatically correct but not the natural expression.</p>
+                <br><br>
+            </div>
+            </div>
+
+            <div class="mistake-item">
+                <p class="font-bold text-red-400">❌ Mistake 3: Omitting "it"</p>
+                <br>
+                <p class="text-sm">"I can't make" (incomplete)</p>
+                <br>
+                <p class="text-sm">"I can't make to the meeting" (incorrect)</p>
+                <br>
+                <p class="text-green-400">✅ Correct: "I can't make it"</p>
+                <br>
+                <div class="explanation">
+                    <p class="text-xs">The expression requires "it" as the object. Without it, the sentence is incomplete.</p>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHEN TO USE "I CAN'T MAKE IT" -->
+    <div class="decision-guide">
+        <h4 class="text-xl font-bold text-blue-400 mb-4">When to Use "I can't make it"</h4>
+        <br>
+
+        <div class="guide-row">
+            <div class="guide-icon">✅</div>
+            <div class="guide-content">
+                <p class="font-bold text-green-400">Perfect Situations:</p>
+                <ul class="list-disc pl-4 text-sm space-y-1">
+                    <li>Meetings you've been invited to</li>
+                    <li>Social events (lunches, happy hours, parties)</li>
+                    <li>Team gatherings or celebrations</li>
+                    <li>Any event where your presence was expected</li>
+                    <li>When you need to decline politely but firmly</li>
+                </ul>
+                <br><br>
+            </div>
+        </div>
+
+        <div class="guide-row">
+            <div class="guide-icon">⚠️</div>
+            <div class="guide-content">
+                <p class="font-bold text-yellow-400">When to Use Alternatives:</p>
+                <ul class="list-disc pl-4 text-sm space-y-1">
+                    <li>Formal written refusals → "I won't be able to attend"</li>
+                    <li>Very formal contexts → "I regret that I will be unable to participate"</li>
+                    <li>When giving detailed reasons → "I'm unable to join due to..."</li>
+                <br><br><br>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRACTICAL EXAMPLES -->
+    <div class="practice-section">
+        <h4 class="text-xl font-bold text-purple-400 mb-4">Practical Examples: From Portuguese to Professional English</h4>
+
+        <div class="example-transformation">
+            <div class="example-step">
+                <p class="font-bold text-yellow-400">Portuguese Thought:</p>
+                <p>"Não vou conseguir ir na reunião amanhã."</p>
+                <br>
+            </div>
+
+            <div class="example-step">
+                <p class="font-bold text-green-400">Direct Translation (Avoid):</p>
+                <p>"I won't be able to go to the meeting tomorrow."</p>
+                <br>
+            </div>
+
+            <div class="example-step">
+                <p class="font-bold text-blue-400">Professional English:</p>
+                <p>"I can't make it to the meeting tomorrow."</p>
+                <br>
+            </div>
+        </div>
+
+        <div class="example-transformation">
+            <div class="example-step">
+                <p class="font-bold text-yellow-400">Portuguese Thought:</p>
+                <p>"Infelizmente não poderei comparecer ao evento."</p>
+                <br>
+            </div>
+
+            <div class="example-step">
+                <p class="font-bold text-green-400">Direct Translation (Avoid):</p>
+                <p>"Unfortunately I won't be able to attend the event."</p>
+                <br>
+            </div>
+
+            <div class="example-step">
+                <p class="font-bold text-blue-400">Professional English:</p>
+                <p>"I'm afraid I can't make it to the event."</p>
+                <br>
+            </div>
+        </div>
+
+        <div class="example-transformation">
+            <div class="example-step">
+                <p class="font-bold text-yellow-400">Portuguese Thought:</p>
+                <p>"Sinto muito, mas não vou conseguir ir no almoço."</p>
+                <br>
+            </div>
+
+            <div class="example-step">
+                <p class="font-bold text-green-400">Direct Translation (Avoid):</p>
+                <p>"I'm sorry, but I won't be able to go to the lunch."</p>
+                <br>
+            </div>
+
+            <div class="example-step">
+                <p class="font-bold text-blue-400">Professional English:</p>
+                <p>"I'm sorry, but I can't make it to lunch."</p>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- THE PSYCHOLOGY BEHIND THE PHRASE -->
+    <div class="cultural-insight">
+        <h4 class="text-xl font-bold text-center text-orange-300 mb-4">🎯 The Psychology Behind "I can't make it"</h4>
+
+        <div class="psychology-grid">
+            <div class="psychology-item">
+                <p class="font-bold text-green-400">What It Communicates:</p>
+                <ul class="list-disc pl-4 text-sm space-y-1">
+                    <li>You considered the invitation seriously</li><br>
+                    <li>External circumstances prevent your attendance</li><br>
+                    <li>You're not refusing arbitrarily</li><br>
+                    <li>You value the relationship/event</li><br><br><br>
+                </ul>
+            </div>
+
+            <div class="psychology-item">
+                <p class="font-bold text-blue-400">Why It Works Better:</p><br>
+                <ul class="list-disc pl-4 text-sm space-y-1">
+                    <li>"Make it" implies effort and intention</li><br>
+                    <li>Softer than "go" or "attend"</li><br>
+                    <li>Shows you're on the same team</li><br>
+                    <li>Maintains professional relationships</li><br>
+                <br><br><br>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- MEMORY TRICK -->
+    <div class="teacher-note mt-6">
+        <p class="font-bold mb-2">Memory Trick for Brazilian Professionals:</p>
+        <p>Think of "I can't make it" as <strong>"Não vou conseguir comparecer"</strong> but in its natural English form. It's not about literal translation—it's about using the fixed expression that native speakers use. When in doubt, use this formula: <strong>[I/We] + can't + make + it</strong>. Never change the verb or the pronoun.</p>
+    <br><br>
+</div>
+
+    <!-- QUICK REFERENCE -->
+    <div class="quick-reference">
+        <h4 class="text-xl font-bold text-teal-400 mb-4">📝 Quick Reference: Portuguese → English Refusals</h4>
+
+        <div class="reference-table">
+            <table class="w-full">
+                <thead>
+                    <tr class="bg-gray-800">
+                        <th class="p-3 text-left text-yellow-400">Portuguese Phrase</th>
+                        <th class="p-3 text-left text-red-400">Literal Translation (Avoid)</th>
+                        <th class="p-3 text-left text-green-400">Professional English (Use)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-gray-700">
+                        <td class="p-3">Não vou conseguir ir</td>
+                        <td class="p-3">I won't be able to go</td>
+                        <td class="p-3 font-bold">I can't make it</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="p-3">Não posso ir</td>
+                        <td class="p-3">I can't go</td>
+                        <td class="p-3 font-bold">I can't make it</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="p-3">Não vai dar para eu ir</td>
+                        <td class="p-3">It won't work for me to go</td>
+                        <td class="p-3 font-bold">I can't make it</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3">Estou ocupado, não posso</td>
+                        <td class="p-3">I'm busy, I can't</td>
+                        <td class="p-3 font-bold">I can't make it due to a prior commitment</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- NEW SECTION: LAST-MINUTE CHANGES & UNEXPECTED SITUATIONS -->
+<section class="expression-block bg-card mb-12">
+    <h3 class="expression-title">⚡ Section: "I Did Not See That Coming" - Last-Minute Changes</h3>
+
+    <div class="last-minute-intro">
+        <h4 class="text-2xl font-bold text-center text-orange-300 mb-4">How to Handle Unexpected Situations Professionally</h4>
+        <p class="text-center">Last-minute changes happen to everyone. The key is communicating them professionally without sounding unprepared or disrespectful.</p>
+    </div>
+
+    <!-- KEY PHRASES FOR LAST-MINUTE SITUATIONS -->
+    <div class="key-phrases-box">
+        <h4 class="text-xl font-bold text-blue-400 mb-4">Essential Phrases for Last-Minute Situations</h4>
+
+        <div class="phrase-grid">
+            <div class="phrase-item">
+                <p class="font-bold text-green-400">For Meetings/Events:</p>
+                <ul class="list-disc pl-4 text-sm space-y-1">
+                    <li>"Something just came up"</li>
+                    <li>"An urgent matter has popped up"</li>
+                    <li>"A last-minute issue has arisen"</li>
+                    <li>"An unexpected situation requires my attention"</li>
+                </ul>
+            </div>
+
+            <div class="phrase-item">
+                <p class="font-bold text-yellow-400">Portuguese Equivalents:</p>
+                <ul class="list-disc pl-4 text-sm space-y-1">
+                    <li>"Algo de última hora surgiu"</li>
+                    <li>"Uma questão urgente apareceu"</li>
+                    <li>"Um problema de última hora surgiu"</li>
+                    <li>"Uma situação inesperada requer minha atenção"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHEN TO USE EACH PHRASE -->
+    <div class="subsection">
+        <h4 class="subsection-title">Choosing the Right Phrase for the Situation</h4>
+
+        <div class="situation-guide">
+            <div class="situation-item">
+                <div class="situation-header">
+                    <p class="font-bold text-green-400">Situation 1: Minor Last-Minute Change</p>
+                </div>
+                <div class="situation-content">
+                    <p class="text-sm"><strong>Example:</strong> You need to leave a meeting 15 minutes early</p>
+                    <p class="text-green-400">✅ Use: "Something just came up that I need to attend to."</p>
+                    <p class="text-xs">Appropriate for: Internal team meetings, informal situations</p>
+                </div>
+            </div>
+
+            <div class="situation-item">
+                <div class="situation-header">
+                    <p class="font-bold text-orange-400">Situation 2: Moderate Priority Change</p>
+                </div>
+                <div class="situation-content">
+                    <p class="text-sm"><strong>Example:</strong> You can't attend a scheduled client call</p>
+                    <p class="text-green-400">✅ Use: "An urgent matter has come up that requires my immediate attention."</p>
+                    <p class="text-xs">Appropriate for: Client meetings, important internal meetings</p>
+                </div>
+            </div>
+
+            <div class="situation-item">
+                <div class="situation-header">
+                    <p class="font-bold text-red-400">Situation 3: High Priority Emergency</p>
+                </div>
+                <div class="situation-content">
+                    <p class="text-sm"><strong>Example:</strong> System outage requiring your expertise</p>
+                    <p class="text-green-400">✅ Use: "A critical issue has arisen that I need to address immediately."</p>
+                    <p class="text-xs">Appropriate for: True emergencies, system failures, urgent client issues</p>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROFESSIONAL STRUCTURE FOR LAST-MINUTE COMMUNICATION -->
+    <div class="structure-guide">
+        <h4 class="text-xl font-bold text-purple-400 mb-4">Professional Structure for Last-Minute Changes</h4>
+
+        <div class="structure-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <p class="font-bold">Start with Regret/Apology</p>
+                <p>"I'm afraid..." or "I'm sorry, but..."</p>
+                <p class="text-xs">Sets the tone and shows respect</p>
+                <br>
+            </div>
+        </div>
+
+        <div class="structure-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <p class="font-bold">State the Situation Clearly</p>
+                <p>"Something urgent has come up"</p>
+                <p class="text-xs">Be specific about the nature if appropriate</p>
+                <br>
+            </div>
+        </div>
+
+        <div class="structure-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <p class="font-bold">Explain the Impact</p>
+                <p>"...so I won't be able to make it to our meeting."</p>
+                <p class="text-xs">Connect the situation to the specific commitment</p>
+                <br>
+            </div>
+        </div>
+
+        <div class="structure-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <p class="font-bold">Offer a Solution</p>
+                <p>"Can we reschedule for tomorrow?" or "May I take a rain check?"</p>
+                <p class="text-xs">Shows you're still committed to the relationship</p>
+                <br>
+            </div>
+        </div>
+
+        <div class="structure-step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+                <p class="font-bold">Express Appreciation</p>
+                <p>"Thank you for your understanding."</p>
+                <p class="text-xs">Maintains positive relationship</p>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- WHAT TO AVOID -->
+    <div class="avoid-section">
+        <h4 class="text-xl font-bold text-red-400 mb-4">🚫 What Brazilian Professionals Should Avoid</h4>
+
+        <div class="avoid-grid">
+            <div class="avoid-item">
+                <p class="font-bold text-yellow-400">Avoid Being Too Vague:</p>
+                <p class="text-sm">❌ "Algo apareceu" → "Something appeared"</p>
+                <p class="text-green-400">✅ Better: "Something urgent has come up"</p>
+            </div>
+
+            <div class="avoid-item">
+                <p class="font-bold text-yellow-400">Avoid Being Too Casual:</p>
+                <p class="text-sm">❌ "Deu ruim aqui" → "Things went bad here"</p>
+                <p class="text-green-400">✅ Better: "An unexpected issue has arisen"</p>
+            </div>
+
+            <div class="avoid-item">
+                <p class="font-bold text-yellow-400">Avoid No Explanation:</p>
+                <p class="text-sm">❌ "Não vou conseguir" → "I won't be able to" (no reason)</p>
+                <p class="text-green-400">✅ Better: "I won't be able to make it due to an urgent matter"</p>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+
+                <!-- Footer Section -->
+            <footer class="p-6 text-center text-sm text-gray-500">
+                <p>&copy; 2025 Brazilian Business Communication - Created by Daby. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+
+    
+    <script>
+        // Add interactivity to the Start Learning button
+        document.querySelector('.start-button').addEventListener('click', function() {
+            // Scroll to the self-assessment section
+            document.querySelector('.expression-block').scrollIntoView({
+                behavior: 'smooth'
+            });
+
+            // Optional: Add a visual feedback
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 200);
+        });
+    </script>
+</body>
+</html>
